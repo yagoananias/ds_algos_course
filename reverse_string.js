@@ -8,4 +8,10 @@ function reverseStr(str) {
   return reversed;
 }
 
-console.log(reverseStr("Olá"));
+//console.log(reverseStr("Olá"));
+
+//using a modern Javascript with arrow functions
+
+const reverseArrowFunction = strNew => strNew.split('').reverse().join('');
+
+console.log(reverseArrowFunction("Brabo memo"));
