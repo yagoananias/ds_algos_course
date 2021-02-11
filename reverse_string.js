@@ -1,5 +1,11 @@
 function reverseStr(str) {
-  return str.split("").reverse().join("");
+  let reversed = "";
+
+  for(let character of str) {
+    reversed = character + reversed;
+  }
+
+  return reversed;
 }
 
-console.log(reverseStr("Olá"))
+console.log(reverseStr("Olá"));
