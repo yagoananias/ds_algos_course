@@ -1,3 +1,5 @@
+// implementing an array in JS
+
 class MyArray {
   constructor() {
     this.length = 0;
@@ -18,11 +20,26 @@ class MyArray {
     const lastItem = this.data[this.length-1]
     delete this.data[this.length-1]
     this.length--;
-    return item;
+    return lastItem;
+  }
+
+  delete(index) {
+    const item = this.data[index];
+    this.shiftItems(index);
+  }
+
+  shiftItems(index) {
+    for (let i = index; i < this.length - 1; i++ ) {
+      this.data[i] = this.data[i+1];
+    }
+    delete this.data[this.length-1];
+    this.length--;
   }
 }
 
 const newArray = new MyArray();
 newArray.push('Yago');
 newArray.push('Andressa');
+newArray.delete(1);
+newArray.push('Teste');
 console.log(newArray);
