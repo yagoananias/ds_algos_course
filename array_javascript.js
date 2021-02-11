@@ -1,6 +1,6 @@
 class MyArray {
   constructor() {
-    this.lenght = 0;
+    this.length = 0;
     this.data = {};
   }
 
@@ -9,12 +9,20 @@ class MyArray {
   }
 
   push(item) {
-    this.data[this.lenght] = item
-    this.lenght++;
-    return this.lenght;
+    this.data[this.length] = item
+    this.length++;
+    return this.length;
+  }
+
+  pop() {
+    const lastItem = this.data[this.length-1]
+    delete this.data[this.length-1]
+    this.length--;
+    return item;
   }
 }
 
 const newArray = new MyArray();
+newArray.push('Yago');
+newArray.push('Andressa');
 console.log(newArray);
-console.log(newArray.get(0))
