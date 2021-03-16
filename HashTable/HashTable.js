@@ -13,9 +13,10 @@ class HashTable {
   
   set(key, value) {
     let address = this._hash(key);
+    //se não tem nada eu crio um array depois faço push
+    //se tiver eu não crio, somente faço push
     if(!this.data[address]) {
       this.data[address] = [];
-      this.data[address].push([key, value]);
     }
     this.data[address].push([key, value]);
     return this.data;
