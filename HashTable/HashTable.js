@@ -11,8 +11,11 @@ class HashTable {
     return hash;
   }
   
-  set(myHashTable) {
-    this.
+  set(key, value) {
+    let address = this._hash(key);
+    if(!this.data[address]) {
+      this.data[address] = [];
+    }
   }
 }
 
