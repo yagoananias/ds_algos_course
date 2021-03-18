@@ -5,7 +5,7 @@ function firstRecurrent(input) {
     if(model == input[i]) {
       return model;
     } else {
-      model++
+      model=input[i];
     }
   }
 
