@@ -1,11 +1,11 @@
 function firstRecurrent(input) {
-  let model = input[0];
+  let model = {};
   
-  for(let i = 1; i < input.length; i++){
-    if(model == input[i]) {
-      return model;
+  for(let i = 0; i < input.length; i++){
+    if(model[input[i]) {
+      return input[i];
     } else {
-      model=input[i+1];
+      model[input[i]] = true;
     }
   }
 
