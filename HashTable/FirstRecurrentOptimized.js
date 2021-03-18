@@ -1,12 +1,15 @@
 function firstRecurrent(input) {
-  model = input[0];
+  let model = input[0];
   
-  for(i = 1; i < input.length; i++){
+  for(let i = 1; i < input.length; i++){
     if(model == input[i]) {
       return model;
+    } else {
+      model++
     }
   }
+
   return undefined;
 }
 
-firstRecurrent([2,5,1,2,3,5,1,2,4])
+firstRecurrent([2,5,5,0,3,5,1,0,4])
