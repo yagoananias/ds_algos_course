@@ -14,11 +14,10 @@
 class FirstRecurrent {
   
   isRecurrent(a) {
-    let counter = 0;
-    for(let i = 0; i < a.length; i++) {
-      if(a[i] == counter) {
-        counter++;
-      }
-    }
+    
   }
+  
 }
+
+const myArray = new FirstRecurrent();
+myArray.isRecurrent(a[2,5,1,2,3,5,1,2,4])
