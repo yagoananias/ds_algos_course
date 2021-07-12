@@ -1,3 +1,5 @@
+//Ex from the course Data Structures and Algorithms
+
 class MyArray {
   constructor() {
     this.length = 0;
